@@ -25,14 +25,17 @@
 
 # Workflow
   Data Preprocessing: 
+  
     * Face images are cropped and converted to grayscale.
     * Images are flattened into vectors for processing.
     
   Training:
+  
     * Eigenfaces: PCA is applied to compute eigenvalues and eigenvectors.
     * Fisherfaces: PCA is followed by LDA to achieve optimal subspace projection.
     
   Testing:
+  
     * Test images are projected onto the respective subspaces (Eigenface or Fisherface).
     * Closest matches are identified using distance metrics.
     
