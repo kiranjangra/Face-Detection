@@ -23,7 +23,7 @@
   * Scikit-learn: For data splitting and utility functions.
 
 # Workflow
-  Data Preprocessing:
+  Data Preprocessing: 
     * Face images are cropped and converted to grayscale.
     * Images are flattened into vectors for processing.
   Training:
