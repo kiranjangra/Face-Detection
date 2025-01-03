@@ -7,6 +7,7 @@
    * Uses PCA to reduce the dimensionality of facial images.
    * Captures the most significant eigenvectors (Eigenfaces) to represent face data.
    * Projects test images onto the Eigenface space and calculates similarity for recognition.
+     
   Fisherfaces Method:
   * Combines PCA and LDA for enhanced class separability.
   * Projects images onto an optimal subspace that maximizes between-class scatter while minimizing within-class scatter.
@@ -26,11 +27,14 @@
   Data Preprocessing: 
     * Face images are cropped and converted to grayscale.
     * Images are flattened into vectors for processing.
+    
   Training:
     * Eigenfaces: PCA is applied to compute eigenvalues and eigenvectors.
     * Fisherfaces: PCA is followed by LDA to achieve optimal subspace projection.
+    
   Testing:
     * Test images are projected onto the respective subspaces (Eigenface or Fisherface).
     * Closest matches are identified using distance metrics.
+    
   Performance Evaluation:
     Accuracy of both methods is calculated and printed for comparison.
