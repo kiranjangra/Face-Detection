@@ -16,21 +16,21 @@
   Both methods are evaluated for accuracy, and their performance is compared under the same dataset and conditions.
 
 # Tools & Technologies
-  Python: Core programming language for implementation.
-  NumPy: For efficient numerical computations.
-  OpenCV: For face detection using Haar cascades.
-  PIL: For image preprocessing.
-  Scikit-learn: For data splitting and utility functions.
+  * Python: Core programming language for implementation.
+  * NumPy: For efficient numerical computations.
+  * OpenCV: For face detection using Haar cascades.
+  * PIL: For image preprocessing.
+  * Scikit-learn: For data splitting and utility functions.
 
 # Workflow
   Data Preprocessing:
-    Face images are cropped and converted to grayscale.
-    Images are flattened into vectors for processing.
+    * Face images are cropped and converted to grayscale.
+    * Images are flattened into vectors for processing.
   Training:
-    Eigenfaces: PCA is applied to compute eigenvalues and eigenvectors.
-    Fisherfaces: PCA is followed by LDA to achieve optimal subspace projection.
+    * Eigenfaces: PCA is applied to compute eigenvalues and eigenvectors.
+    * Fisherfaces: PCA is followed by LDA to achieve optimal subspace projection.
   Testing:
-    Test images are projected onto the respective subspaces (Eigenface or Fisherface).
-    Closest matches are identified using distance metrics.
+    * Test images are projected onto the respective subspaces (Eigenface or Fisherface).
+    * Closest matches are identified using distance metrics.
   Performance Evaluation:
     Accuracy of both methods is calculated and printed for comparison.
